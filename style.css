@@ -1,0 +1,477 @@
+
+.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+background-color: #f4f4f6;
+}
+#login-btn{
+    margin-left: 10px;
+}
+.c-home{
+    width: 60%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "Montserrat"  , sans-serif ;
+    font-weight: 800;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: translate(33% , 10px);
+    display: none;
+    animation: login-move 3s;
+    z-index: 3;
+}
+@keyframes login-move {
+    from{
+        transform: translateX(160%);
+    }
+    to{
+    }
+}
+.btn-close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 101;
+}
+.signin , .signup ,.clickin{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+.signin{
+    left: 0;
+    z-index: 20;
+}
+.clickin{
+    left: 0;
+    z-index: 50;
+    transition: all .3s ease-out;
+    display: none;
+}
+.clickin form {
+width: 100%;
+height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup{
+    right: 0;
+    z-index: 1;
+}
+
+
+.signin h2 , .signup h2 ,.clickin  h2{
+    font-weight: 800;
+    font-size: 30px;
+    margin: 15px 0 35px 0;
+}
+.overlay-left h2 , .overlay-right h2{
+    margin: 20px;
+    font-size: 35px;
+    }
+
+
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    gap: 15px;
+}
+
+.icon a , .footer a{
+    width: 55px; 
+    height: 55px;
+    border: 1px  solid #b5afaf;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.icon a:hover , .footer a:hover { 
+    background-image: linear-gradient(to bottom left  ,#2167B2  ,#01509B ,#233D78 60% );
+    transition: 1s;
+}
+
+.signin p , .signup  p{
+    margin: 25px 0;
+}
+.overlay-left p , .overlay-right p{
+    margin: 20px;
+    font-size: 20px;
+    color: #eee;
+    }
+
+.input {
+width: 65%;
+margin-bottom: 20px;
+background-color: #eee;
+padding: 16px 10px;
+border-radius: 10px;
+border: 2px  solid #ddd;
+}
+
+.input:focus {
+    width: 75%;
+    transition: .5s;
+    }
+
+.overlay-left button:active , .overlay-right button:active ,.buttonscale button:active ,.div-btn button:active {
+transform: scale(0.90);
+    }
+
+    .overlay-left button , .overlay-right button ,.buttonscale button ,.div-btn button{
+        color: #fff;
+        padding: 13px 17px;
+        border-radius: 30px;
+            }
+
+.forget{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:20px ;
+}
+.forget p{
+margin: 0;
+transform: translateY(7px);
+}
+
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transition: transform .6s ease-in-out; 
+    z-index: 100;
+    overflow: hidden;
+}
+
+.c-home.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+.c-home.right-panel-active .overlay{
+    transform: translateX(50%);
+}
+.overlay{
+    position: relative;
+    left: -100%;
+    /* right: 100%; */
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left  ,#2167B2  ,#01509B ,#233D78 60% );
+    transition: transform .6s ease-in-out;
+
+}
+
+.overlay-left , .overlay-right{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: transform .6s ease-in-out; 
+    color: #fff;
+}
+.overlay-left{
+    left: 0;
+
+}
+.overlay-right{
+    right: 0;
+}
+
+
+.home-text {
+   width: 40%;
+   height: 90vh;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.home-text p{
+font-size: 65px;
+font-weight: 700;
+transform: translateX(120px);
+color: #233D78;
+animation: text-move 2s;
+ }
+ @keyframes text-move {
+    from{
+      transform: translateX(-110%);
+    }
+    to{
+
+    }
+}
+.home-img {
+    width: 65%;
+    height: 90vh;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+ }
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.div-grid{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #F6F6FC;
+}
+.grid-left{
+    width: 45%;
+    height: 80%;
+}
+.c-grid-left{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-rows:repeat(2 , 1fr) ;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 20px;
+    transform: translateY(20px);
+    font-family: "Oswald" , sans-serif;
+
+}
+.grid-right{
+    position: relative;
+    width: 30%;
+    height: 95%;
+    transform: translate(70px ,20px);
+}
+.c-grid-left div{
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #4E4E4E;
+    border: 1px solid rgb(27, 26, 26);
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+    
+}
+
+
+.c-grid-left div i{
+   font-size: 50px;
+   margin-bottom: 20px;
+}
+.div-btn{
+    transform: translate(0 , 80px);
+}
+.div-btn button{
+    font-size: 30px;
+    font-family: "Oswald" , sans-serif;
+    width: 30%;
+}
+.img-card1 , .img-card2, .img-card3 , .img-card4, .img-card5 , .img-card6{
+    width: 100%;
+    height: 100%;
+   position: absolute;
+   display: none;
+}
+.img-card1 img , .img-card2 img, .img-card3 img, .img-card4 img, .img-card5 img, .img-card6 img{
+    width: 75%;
+    height: 100%;
+    
+ }
+ .city{
+    width: 100%;
+    height: 80vh;
+    background-color: #F6F6FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat",sans-serif ;
+    font-weight: 800;
+    overflow: hidden;
+ }
+ .text-city{
+    width: 80%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    
+ }
+ .text-city h2{
+   font-size: 40px;
+    
+ }
+ .grid-city{
+    width: 80%;
+    height: 85%;
+    display: grid;
+    grid-template-rows:repeat(7 , 30%);
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px;
+    overflow: scroll;
+ }
+ .grid-city div{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px  solid black;
+ }
+
+ .grid-city div i{
+font-size: 30px;
+transform: translateX(-10px);
+cursor: pointer;
+ }
+ .grid-city div h2{
+   transform: translateX(10px) ;
+     }
+
+     .footer{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 30px;
+        background-color: #F6F6FC;
+     }
+
+     
+    @media (min-width:100px) and (max-width:600px){
+        .c-home{
+            width: 95%;
+            height: 85%;
+            transform: translate(0% , 10px);
+            display: none;
+        }
+        @keyframes login-move {
+            from{
+                transform: translateX(120%);
+            }
+            to{
+            }
+        }
+        
+        .signin h2 , .signup h2 ,.clickin  h2{
+            font-size: 25px;
+        }
+        
+        
+        .input {
+        width: 85%;
+        font-size: 15px;
+        }
+        
+        .input:focus {
+            width: 95%;
+            transition: .5s;
+            }
+        
+        
+        .forget p{
+        width: 70%;
+        font-size: 14px;
+        }
+        .forget button{
+            width: 30%;
+            font-size: 14px;
+            padding: 0;
+            transform: translate(-5px ,7px);
+            }
+
+        #click-in-2{
+            transform: translate(-50px,5px);
+        }
+
+        .home-text {
+            width: 60%;
+        }
+        .home-text p{
+        font-size: 50px;
+        transform: translateX(10px);
+        }
+        @keyframes text-move {
+        from{
+        transform: translateX(-110%);
+        }
+        to{
+        
+        }
+        }
+        
+        
+        .grid-left{
+            width: 50%;
+            height: 80%;
+        }
+        .c-grid-left{
+            height: 80%;
+            grid-template-rows:repeat(3 , 1fr) ;
+            grid-template-columns:repeat(2, 1fr) ;
+            transform: translateX(10px);
+        
+        }
+        .grid-right{
+            position: relative;
+            width: 50%;
+            height: 95%;
+            transform: translate(0px ,20px);
+        }
+        
+        .div-btn{
+            transform: translate(20px , 80px);
+        }
+        .div-btn button{
+            font-size: 25px;
+            font-family: "Oswald" , sans-serif;
+            width: 70%;
+        }
+    
+        .grid-city{
+            display: grid;
+            grid-template-rows:repeat(11 , 30%);
+            grid-template-columns: repeat(2 , 1fr);
+        }
+        
+        .grid-city div h2{
+        transform: translateX(10px) ;
+        font-size: 18px;
+        }
+        
+    }

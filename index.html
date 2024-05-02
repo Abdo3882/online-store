@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Trirong|Montserrat|Cairo|Open Sans|Jomhuria|Poppins|Oswald|Slabo 13px|Concert One|Eczar|Lato|Roboto Mono|Noto Sans
+    ">
+    <link rel="stylesheet" href="./bootstrap/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css.map">
+    <title>online store</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" id="nave-hi" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Patagonia</a>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown" data-bs-theme="light">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary " type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-primary " id="login-btn">Sign in</button>
+
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+      </nav> 
+
+      <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Save changes</h1>
+            </div>
+            <div class="modal-body">
+              Do you want to save the new password?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="home" >
+
+        <div class="c-home shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="main1" >
+          <button type="button" class="btn-close " aria-label="Close" id="close-login" ></button>
+            <div class="signin" id="signin1">
+                <form action="#">
+                    <h2>Sign in</h2>
+    
+                <div class="icon">
+                            <a target="blank" > <i class="fa-brands fa-facebook"></i></a>
+                            <a target="blank" > <i class="fa-brands fa-google"></i></a>
+                            <a target="blank"> <i class="fa-brands fa-github"></i></a>
+                </div>
+    
+                <p>Or use your account</p> 
+    
+                <input class="input" type="email"  placeholder="Email" required>
+                <input class="input" type="password"  placeholder="password">
+                <div class="buttonscale">
+                  <button class="btn btn-primary btn-lg  ">SIGN IN</button>
+                </div>
+    
+               <div class="forget">
+                <p>forgot your password?</p>
+                <button class="btn btn-link " id="click-in-1">click in</button>
+               </div>
+    
+                </form>
+    
+                </div>
+    
+                <div class="clickin" id="click-div">
+                  <form action="#">
+                    <h2>Reset Password</h2>
+                    <input class="input" type="email"  placeholder="Email" required>
+                    <input class="input" type="password"  placeholder="new-password">
+                    <input class="input" type="password"  placeholder="confirm new-password">
+                    <div class="buttonscale">
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                      confirm changes
+                      </button>
+    
+                      </div>
+                    <div class="forget">
+                      <p>logn in?</p>
+                      <button type="button" class="btn btn-link " id="click-in-2">click in</button>
+    
+                    </div>
+                  </form>
+                  </div>
+        
+                <div class="signup">
+                    <form action="#">
+                        <h2>Create Account</h2>
+        
+                    <div class="icon">
+                        <a target="blank" > <i class="fa-brands fa-facebook"></i></a>
+                                <a target="blank" > <i class="fa-brands fa-google"></i></a>
+                                <a target="blank"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+        
+                    <p>Or use your email  for registration</p> 
+                    
+                    <input class="input" type="name"  placeholder="Name"/>
+                    <input class="input" type="email"  placeholder="Email" required/>
+                    <input class="input" type="password"  placeholder="password"/>
+                    <div class="buttonscale">
+                      <button class="btn btn-primary btn-lg  ">SIGN UP</button>
+                    </div>
+                    </form>
+                </div>
+        
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-left">
+                            <h2 class="overlay-left-h2">Welcome Back!</h2>
+                            <p>to keep connected with us  please login with your personal info</p>
+                            <button id="signin" class="btn btn-outline-primary btn-lg ">sign in</button>
+                        </div>
+        
+                        <div class="overlay-right">
+                            <h2>Hello, friend</h2>
+                            <p>Enter  your personal details and start journey with us</p>
+                            <button id="signup" class="btn btn-outline-primary btn-lg">sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        <div class="home-text" id="home-text-h">
+          <p>Order anything you need online in Egypt.</p>
+        </div>
+    <div class="home-img" id="home-img-h">
+      <img src="./imgs/home.jpg" alt="img" >
+    </div>
+
+   
+
+    </div>
+
+    <div class="div-grid">
+     <div class="grid-left">
+      <div class="c-grid-left">
+        <div class="card1" id="card1-id"><i class="fa-thin fa-basket-shopping"></i><h3>Grocery</h3></div>
+        <div class="card2" id="card2-id"><i class="fa-thin fa-paw"></i><h3>Pets</h3></div>
+        <div class="card3" id="card3-id"><i class="fa-thin fa-bag-shopping"></i><h3>Fashion</h3></div>
+        <div class="card4" id="card4-id"><i class="fa-thin fa-thin fa-pizza-slice "></i><h3>Food</h3></div>
+        <div class="card5" id="card5-id"><i class="fa-thin fa-prescription-bottle-medical "></i><h3>Pharmacy</h3></div>
+        <div class="card6" id="card6-id"><i class="fa-thin fa-computer"></i><h3>Electronic</h3></div>
+      </div>
+      <div class="div-btn">
+        <button class="btn btn-primary btn-lg">SHOP NOW</button>
+      </div>
+     </div>
+      <div class="grid-right">
+        <div class="img-card1" id="img-card1-id" ><img src="./imgs/Grocery.png" alt="img"></div>
+        <div class="img-card2" id="img-card2-id" ><img src="./imgs/Pets.png" alt="img"></div>
+        <div class="img-card3" id="img-card3-id"><img src="./imgs/Fashion.png" alt="img"></div>
+        <div class="img-card4" id="img-card4-id"><img src="./imgs/Food.png" alt="img"></div>
+        <div class="img-card5" id="img-card5-id"><img src="./imgs/Pharmacy.png" alt="img"></div>
+        <div class="img-card6" id="img-card6-id"><img src="./imgs/Electronic.png" alt="img"></div>
+      </div>
+    </div>
+
+
+    <div class="city">
+      <div class="text-city"><h2>Cities we serve in Egypt</h2></div>
+      <div class="grid-city">
+        <div class="name-city1">
+          <h2>Banha</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city2">
+          <h2>Cairo</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city3">
+          <h2>Minya</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city4">
+          <h2>Suhag</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city5">
+          <h2>Tanta</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city6">
+          <h2>Assiut</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city7">
+          <h2>Talkha</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city8">
+          <h2>Zagazig</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city9">
+          <h2>Damietta</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city10">
+          <h2>Hurghada</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city11">
+          <h2>Ismailia</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city12">
+          <h2>Mansoura</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city13">
+          <h2>Damanhour</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city14">
+          <h2>Mit Ghamr</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city15">
+          <h2>nasr city</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city16">
+          <h2>Port Said</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city17">
+          <h2>Alexandria</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city18">
+          <h2>Ras El Bar</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city19">
+          <h2>Damietta New</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city20">
+          <h2>6th of October</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        <div class="name-city21">
+          <h2>Shebeen El Koom</h2>
+          <i class="fa-duotone fa-arrow-right-to-line"></i>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <a target="blank" > <i class="fa-brands fa-facebook"></i></a>
+      <a target="blank" > <i class="fa-brands fa-instagram"></i></a>
+      <a target="blank"> <i class="fa-brands fa-github"></i></a>
+    </div>
+
+
+
+
+      <script src="./main.js"></script>
+      <script src="./bootstrap/all.min.js"></script>
+      <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- <script src="./bootstrap/bootstrap.bundle.min.js.map"></script> -->
+</body>
+</html>
